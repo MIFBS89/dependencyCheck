@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout SCM') {
       steps {
-        git 'https://github.com/MIFBS89/dependencyCheck.git'
+        git 'https://github.com/MIFBS89/dependencyCheck.git',
           branch: 'main'
       }
     }
