@@ -4,6 +4,7 @@ pipeline {
     stage('Checkout SCM') {
       steps {
         git 'https://github.com/MIFBS89/dependencyCheck.git'
+          branch: 'main'
       }
     }
 
